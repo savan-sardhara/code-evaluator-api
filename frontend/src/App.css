@@ -1,0 +1,149 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.enrollment-selector label {
+  margin-right: 10px;
+}
+
+.enrollment-selector select {
+  padding: 8px 12px;
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.question-box {
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.question-box h3 {
+  margin-top: 0;
+}
+
+/* Dropzone Styles */
+.dropzone {
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.dropzone:hover, .dropzone.dragging {
+  background-color: var(--surface-color);
+  border-color: var(--primary-color);
+}
+
+.dropzone p {
+  margin: 0 0 0.5rem 0;
+}
+
+.or-text {
+    color: #888;
+}
+
+.choose-file-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.choose-file-button:hover {
+    background-color: #0056b3;
+}
+
+/* Analyze Button and Messages */
+.analyze-button {
+  background-color: var(--success-color);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.analyze-button:hover {
+  background-color: #218838;
+}
+
+.analyze-button:disabled {
+  background-color: #555;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: var(--error-color);
+  background-color: rgba(220, 53, 69, 0.1);
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+
+/* Add this to the end of src/App.css */
+.left-panel {
+  min-height: 500px;
+}
+
+.initial-state-placeholder, .loading-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: var(--surface-color);
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  text-align: center;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.loading-state h2 {
+  color: var(--primary-color);
+}

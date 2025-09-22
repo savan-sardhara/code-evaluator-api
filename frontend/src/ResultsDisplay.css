@@ -1,0 +1,105 @@
+.results-container {
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  height: 100%;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.score-chart {
+  width: 100%;
+  max-width: 150px;
+}
+
+.summary-text p {
+  margin-top: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.score-cards {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.score-card {
+  flex: 1;
+  background-color: var(--background-color);
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.score-card h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.score-card p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Feedback Section */
+.feedback-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.feedback-list h4 {
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.feedback-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid; /* The color will be set by the type class */
+}
+
+.feedback-item p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.feedback-type {
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+/* Color coding based on feedback type */
+.feedback-item.success { border-color: var(--success-color); }
+.feedback-item.success .feedback-type { background-color: var(--success-color); }
+
+.feedback-item.error { border-color: var(--error-color); }
+.feedback-item.error .feedback-type { background-color: var(--error-color); }
+
+.feedback-item.improvement { border-color: var(--improvement-color); }
+.feedback-item.improvement .feedback-type { background-color: var(--improvement-color); color: #000; }
+
+.feedback-item.syntax { border-color: #6f42c1; } /* A nice purple for syntax */
+.feedback-item.syntax .feedback-type { background-color: #6f42c1; }
