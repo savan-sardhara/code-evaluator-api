@@ -1,21 +1,41 @@
 .app-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .app-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 1rem;
 }
 
 .app-header h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Tablet and desktop header */
+@media (min-width: 768px) {
+  .app-container {
+    padding: 2rem;
+  }
+  
+  .app-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .app-header h1 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
 }
 
 .enrollment-selector label {
@@ -31,16 +51,83 @@
   font-size: 1rem;
 }
 
+.enrollment-input {
+  padding: 10px 15px;
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 250px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+
+/* Tablet and desktop input */
+@media (min-width: 768px) {
+  .enrollment-input {
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.enrollment-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.enrollment-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.loading-indicator {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  margin-left: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+.student-found {
+  color: var(--success-color);
+  font-size: 0.9rem;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
 .main-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .right-panel {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  overflow-y: auto;
+  max-height: none;
+}
+
+/* Tablet and desktop layout */
+@media (min-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .right-panel {
+    gap: 1.5rem;
+    max-height: 90vh;
+  }
 }
 
 .question-box {
@@ -122,6 +209,21 @@
   padding: 1rem;
   border-radius: 6px;
   text-align: center;
+}
+
+.submission-notice {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(40, 167, 69, 0.1);
+  border: 1px solid var(--success-color);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.submission-notice p {
+  margin: 0;
+  color: var(--success-color);
+  font-weight: 500;
 }
 
 

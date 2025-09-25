@@ -1,0 +1,1394 @@
+[
+  {
+    "enrollmentNumber": "240823001",
+    "question": {
+      "modelName": "Product",
+      "fields": [
+        "name",
+        "price",
+        "category",
+        "inStock"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823002",
+    "question": {
+      "modelName": "Order",
+      "fields": [
+        "orderId",
+        "customerName",
+        "amount",
+        "isShipped"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823003",
+    "question": {
+      "modelName": "Customer",
+      "fields": [
+        "firstName",
+        "lastName",
+        "email",
+        "phone"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823004",
+    "question": {
+      "modelName": "Invoice",
+      "fields": [
+        "invoiceId",
+        "orderId",
+        "total",
+        "dueDate"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823005",
+    "question": {
+      "modelName": "Cart",
+      "fields": [
+        "cartId",
+        "userId",
+        "items",
+        "totalPrice"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823006",
+    "question": {
+      "modelName": "Payment",
+      "fields": [
+        "paymentId",
+        "orderId",
+        "method",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823007",
+    "question": {
+      "modelName": "Supplier",
+      "fields": [
+        "name",
+        "contactEmail",
+        "phone",
+        "address"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823008",
+    "question": {
+      "modelName": "Shipment",
+      "fields": [
+        "shipmentId",
+        "orderId",
+        "carrier",
+        "trackingNumber"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823009",
+    "question": {
+      "modelName": "Review",
+      "fields": [
+        "reviewId",
+        "productId",
+        "rating",
+        "comment"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823010",
+    "question": {
+      "modelName": "Category",
+      "fields": [
+        "categoryId",
+        "name",
+        "description",
+        "parentId"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823011",
+    "question": {
+      "modelName": "User",
+      "fields": [
+        "username",
+        "passwordHash",
+        "email",
+        "role"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823012",
+    "question": {
+      "modelName": "Role",
+      "fields": [
+        "roleId",
+        "name",
+        "permissions",
+        "createdAt"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823013",
+    "question": {
+      "modelName": "Permission",
+      "fields": [
+        "permissionId",
+        "action",
+        "resource",
+        "description"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823014",
+    "question": {
+      "modelName": "BlogPost",
+      "fields": [
+        "title",
+        "content",
+        "author",
+        "publishedAt"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823015",
+    "question": {
+      "modelName": "Comment",
+      "fields": [
+        "commentId",
+        "postId",
+        "author",
+        "text"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823016",
+    "question": {
+      "modelName": "Notification",
+      "fields": [
+        "notificationId",
+        "userId",
+        "message",
+        "isRead"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823017",
+    "question": {
+      "modelName": "Message",
+      "fields": [
+        "messageId",
+        "senderId",
+        "receiverId",
+        "content"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823018",
+    "question": {
+      "modelName": "ChatRoom",
+      "fields": [
+        "roomId",
+        "name",
+        "participants",
+        "createdAt"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823019",
+    "question": {
+      "modelName": "Event",
+      "fields": [
+        "eventId",
+        "title",
+        "location",
+        "startTime"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823020",
+    "question": {
+      "modelName": "Ticket",
+      "fields": [
+        "ticketId",
+        "eventId",
+        "holderName",
+        "seatNumber"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823021",
+    "question": {
+      "modelName": "Hospital",
+      "fields": [
+        "hospitalId",
+        "name",
+        "location",
+        "capacity"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823022",
+    "question": {
+      "modelName": "Doctor",
+      "fields": [
+        "doctorId",
+        "name",
+        "specialization",
+        "availability"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823023",
+    "question": {
+      "modelName": "Patient",
+      "fields": [
+        "patientId",
+        "name",
+        "dob",
+        "medicalHistory"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823024",
+    "question": {
+      "modelName": "Appointment",
+      "fields": [
+        "appointmentId",
+        "doctorId",
+        "patientId",
+        "dateTime"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823025",
+    "question": {
+      "modelName": "Prescription",
+      "fields": [
+        "prescriptionId",
+        "doctorId",
+        "patientId",
+        "medications"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823026",
+    "question": {
+      "modelName": "LabTest",
+      "fields": [
+        "testId",
+        "patientId",
+        "type",
+        "result"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823027",
+    "question": {
+      "modelName": "Pharmacy",
+      "fields": [
+        "pharmacyId",
+        "name",
+        "address",
+        "inventory"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823028",
+    "question": {
+      "modelName": "Insurance",
+      "fields": [
+        "policyId",
+        "provider",
+        "coverage",
+        "expiryDate"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823029",
+    "question": {
+      "modelName": "Claim",
+      "fields": [
+        "claimId",
+        "policyId",
+        "amount",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823030",
+    "question": {
+      "modelName": "Bed",
+      "fields": [
+        "bedId",
+        "hospitalId",
+        "type",
+        "isAvailable"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823031",
+    "question": {
+      "modelName": "School",
+      "fields": [
+        "schoolId",
+        "name",
+        "address",
+        "principal"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823032",
+    "question": {
+      "modelName": "Teacher",
+      "fields": [
+        "teacherId",
+        "name",
+        "subject",
+        "experienceYears"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823033",
+    "question": {
+      "modelName": "Student",
+      "fields": [
+        "studentId",
+        "firstName",
+        "lastName",
+        "grade"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823034",
+    "question": {
+      "modelName": "Class",
+      "fields": [
+        "classId",
+        "teacherId",
+        "subject",
+        "schedule"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823035",
+    "question": {
+      "modelName": "Exam",
+      "fields": [
+        "examId",
+        "classId",
+        "date",
+        "maxMarks"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823036",
+    "question": {
+      "modelName": "Result",
+      "fields": [
+        "resultId",
+        "studentId",
+        "examId",
+        "score"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823037",
+    "question": {
+      "modelName": "Library",
+      "fields": [
+        "libraryId",
+        "schoolId",
+        "booksCount",
+        "librarian"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823038",
+    "question": {
+      "modelName": "Book",
+      "fields": [
+        "bookId",
+        "title",
+        "author",
+        "isbn"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823039",
+    "question": {
+      "modelName": "Borrow",
+      "fields": [
+        "borrowId",
+        "bookId",
+        "studentId",
+        "dueDate"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823040",
+    "question": {
+      "modelName": "Attendance",
+      "fields": [
+        "attendanceId",
+        "studentId",
+        "date",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823041",
+    "question": {
+      "modelName": "Vehicle",
+      "fields": [
+        "vehicleId",
+        "type",
+        "plateNumber",
+        "ownerId"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823042",
+    "question": {
+      "modelName": "Driver",
+      "fields": [
+        "driverId",
+        "name",
+        "licenseNumber",
+        "experienceYears"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823043",
+    "question": {
+      "modelName": "Ride",
+      "fields": [
+        "rideId",
+        "driverId",
+        "passengerId",
+        "fare"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823044",
+    "question": {
+      "modelName": "Passenger",
+      "fields": [
+        "passengerId",
+        "name",
+        "email",
+        "phone"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823045",
+    "question": {
+      "modelName": "Route",
+      "fields": [
+        "routeId",
+        "origin",
+        "destination",
+        "distanceKm"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823046",
+    "question": {
+      "modelName": "Booking",
+      "fields": [
+        "bookingId",
+        "rideId",
+        "passengerId",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823047",
+    "question": {
+      "modelName": "PaymentTransaction",
+      "fields": [
+        "txnId",
+        "bookingId",
+        "amount",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823048",
+    "question": {
+      "modelName": "Wallet",
+      "fields": [
+        "walletId",
+        "userId",
+        "balance",
+        "currency"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823049",
+    "question": {
+      "modelName": "Coupon",
+      "fields": [
+        "couponId",
+        "code",
+        "discount",
+        "expiryDate"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823050",
+    "question": {
+      "modelName": "SupportTicket",
+      "fields": [
+        "ticketId",
+        "userId",
+        "issue",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823051",
+    "question": {
+      "modelName": "Movie",
+      "fields": [
+        "movieId",
+        "title",
+        "genre",
+        "releaseDate"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823052",
+    "question": {
+      "modelName": "Actor",
+      "fields": [
+        "actorId",
+        "name",
+        "dob",
+        "filmography"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823053",
+    "question": {
+      "modelName": "Director",
+      "fields": [
+        "directorId",
+        "name",
+        "dob",
+        "moviesDirected"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823054",
+    "question": {
+      "modelName": "Cinema",
+      "fields": [
+        "cinemaId",
+        "name",
+        "location",
+        "capacity"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823055",
+    "question": {
+      "modelName": "Showtime",
+      "fields": [
+        "showtimeId",
+        "movieId",
+        "cinemaId",
+        "startTime"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823056",
+    "question": {
+      "modelName": "TicketBooking",
+      "fields": [
+        "bookingId",
+        "showtimeId",
+        "userId",
+        "seats"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823057",
+    "question": {
+      "modelName": "Snack",
+      "fields": [
+        "snackId",
+        "name",
+        "price",
+        "category"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823058",
+    "question": {
+      "modelName": "OrderSnack",
+      "fields": [
+        "orderSnackId",
+        "bookingId",
+        "snackId",
+        "quantity"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823059",
+    "question": {
+      "modelName": "Membership",
+      "fields": [
+        "membershipId",
+        "userId",
+        "tier",
+        "expiryDate"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823060",
+    "question": {
+      "modelName": "ReviewMovie",
+      "fields": [
+        "reviewId",
+        "movieId",
+        "userId",
+        "rating"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823061",
+    "question": {
+      "modelName": "Project",
+      "fields": [
+        "projectId",
+        "name",
+        "ownerId",
+        "deadline"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823062",
+    "question": {
+      "modelName": "Task",
+      "fields": [
+        "taskId",
+        "projectId",
+        "assigneeId",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823063",
+    "question": {
+      "modelName": "Team",
+      "fields": [
+        "teamId",
+        "name",
+        "members",
+        "createdAt"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823064",
+    "question": {
+      "modelName": "Document",
+      "fields": [
+        "docId",
+        "title",
+        "content",
+        "authorId"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823065",
+    "question": {
+      "modelName": "File",
+      "fields": [
+        "fileId",
+        "fileName",
+        "fileType",
+        "uploadedBy"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823066",
+    "question": {
+      "modelName": "Meeting",
+      "fields": [
+        "meetingId",
+        "projectId",
+        "startTime",
+        "endTime"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823067",
+    "question": {
+      "modelName": "Agenda",
+      "fields": [
+        "agendaId",
+        "meetingId",
+        "topic",
+        "owner"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823068",
+    "question": {
+      "modelName": "Note",
+      "fields": [
+        "noteId",
+        "meetingId",
+        "authorId",
+        "content"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823069",
+    "question": {
+      "modelName": "Milestone",
+      "fields": [
+        "milestoneId",
+        "projectId",
+        "name",
+        "dueDate"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823070",
+    "question": {
+      "modelName": "BugReport",
+      "fields": [
+        "bugId",
+        "projectId",
+        "description",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823071",
+    "question": {
+      "modelName": "Restaurant",
+      "fields": [
+        "restaurantId",
+        "name",
+        "cuisine",
+        "location"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823072",
+    "question": {
+      "modelName": "Menu",
+      "fields": [
+        "menuId",
+        "restaurantId",
+        "items",
+        "updatedAt"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823073",
+    "question": {
+      "modelName": "Dish",
+      "fields": [
+        "dishId",
+        "name",
+        "price",
+        "isVeg"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823074",
+    "question": {
+      "modelName": "Reservation",
+      "fields": [
+        "reservationId",
+        "restaurantId",
+        "customerName",
+        "time"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823075",
+    "question": {
+      "modelName": "Delivery",
+      "fields": [
+        "deliveryId",
+        "orderId",
+        "driverId",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823076",
+    "question": {
+      "modelName": "Cuisine",
+      "fields": [
+        "cuisineId",
+        "name",
+        "origin",
+        "popularDishes"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823077",
+    "question": {
+      "modelName": "Chef",
+      "fields": [
+        "chefId",
+        "name",
+        "specialty",
+        "experienceYears"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823078",
+    "question": {
+      "modelName": "Branch",
+      "fields": [
+        "branchId",
+        "restaurantId",
+        "address",
+        "manager"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823079",
+    "question": {
+      "modelName": "OrderFood",
+      "fields": [
+        "orderId",
+        "restaurantId",
+        "customerId",
+        "items"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823080",
+    "question": {
+      "modelName": "Feedback",
+      "fields": [
+        "feedbackId",
+        "orderId",
+        "rating",
+        "comments"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823081",
+    "question": {
+      "modelName": "Gym",
+      "fields": [
+        "gymId",
+        "name",
+        "location",
+        "capacity"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823082",
+    "question": {
+      "modelName": "Trainer",
+      "fields": [
+        "trainerId",
+        "name",
+        "expertise",
+        "availability"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823083",
+    "question": {
+      "modelName": "Member",
+      "fields": [
+        "memberId",
+        "name",
+        "dob",
+        "membershipId"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823084",
+    "question": {
+      "modelName": "WorkoutPlan",
+      "fields": [
+        "planId",
+        "memberId",
+        "exercises",
+        "durationWeeks"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823085",
+    "question": {
+      "modelName": "DietPlan",
+      "fields": [
+        "dietId",
+        "memberId",
+        "caloriesPerDay",
+        "meals"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823086",
+    "question": {
+      "modelName": "ClassSchedule",
+      "fields": [
+        "classId",
+        "trainerId",
+        "type",
+        "time"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823087",
+    "question": {
+      "modelName": "Subscription",
+      "fields": [
+        "subscriptionId",
+        "memberId",
+        "startDate",
+        "endDate"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823088",
+    "question": {
+      "modelName": "Equipment",
+      "fields": [
+        "equipmentId",
+        "name",
+        "type",
+        "isAvailable"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823089",
+    "question": {
+      "modelName": "AttendanceGym",
+      "fields": [
+        "attendanceId",
+        "memberId",
+        "date",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823090",
+    "question": {
+      "modelName": "PaymentGym",
+      "fields": [
+        "paymentId",
+        "memberId",
+        "amount",
+        "date"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823091",
+    "question": {
+      "modelName": "Shop",
+      "fields": [
+        "shopId",
+        "name",
+        "owner",
+        "location"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823092",
+    "question": {
+      "modelName": "Inventory",
+      "fields": [
+        "inventoryId",
+        "shopId",
+        "productId",
+        "quantity"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823093",
+    "question": {
+      "modelName": "SupplierShop",
+      "fields": [
+        "supplierId",
+        "name",
+        "contact",
+        "productsSupplied"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823094",
+    "question": {
+      "modelName": "Transaction",
+      "fields": [
+        "transactionId",
+        "shopId",
+        "amount",
+        "date"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823095",
+    "question": {
+      "modelName": "LoyaltyCard",
+      "fields": [
+        "cardId",
+        "customerId",
+        "points",
+        "expiryDate"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823096",
+    "question": {
+      "modelName": "Advertisement",
+      "fields": [
+        "adId",
+        "shopId",
+        "title",
+        "budget"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823097",
+    "question": {
+      "modelName": "Campaign",
+      "fields": [
+        "campaignId",
+        "adId",
+        "channel",
+        "reach"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823098",
+    "question": {
+      "modelName": "Offer",
+      "fields": [
+        "offerId",
+        "shopId",
+        "description",
+        "validTill"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823099",
+    "question": {
+      "modelName": "GiftCard",
+      "fields": [
+        "giftCardId",
+        "value",
+        "expiryDate",
+        "redeemed"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823100",
+    "question": {
+      "modelName": "Return",
+      "fields": [
+        "returnId",
+        "orderId",
+        "reason",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823101",
+    "question": {
+      "modelName": "Warranty",
+      "fields": [
+        "warrantyId",
+        "productId",
+        "durationMonths",
+        "terms"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823102",
+    "question": {
+      "modelName": "Product",
+      "fields": [
+        "name",
+        "price",
+        "category",
+        "inStock"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823103",
+    "question": {
+      "modelName": "Order",
+      "fields": [
+        "orderId",
+        "customerName",
+        "amount",
+        "isShipped"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823104",
+    "question": {
+      "modelName": "Customer",
+      "fields": [
+        "firstName",
+        "lastName",
+        "email",
+        "phone"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823105",
+    "question": {
+      "modelName": "Invoice",
+      "fields": [
+        "invoiceId",
+        "orderId",
+        "total",
+        "dueDate"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823106",
+    "question": {
+      "modelName": "Cart",
+      "fields": [
+        "cartId",
+        "userId",
+        "items",
+        "totalPrice"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823107",
+    "question": {
+      "modelName": "Payment",
+      "fields": [
+        "paymentId",
+        "orderId",
+        "method",
+        "status"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823108",
+    "question": {
+      "modelName": "Supplier",
+      "fields": [
+        "name",
+        "contactEmail",
+        "phone",
+        "address"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823109",
+    "question": {
+      "modelName": "Shipment",
+      "fields": [
+        "shipmentId",
+        "orderId",
+        "carrier",
+        "trackingNumber"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823110",
+    "question": {
+      "modelName": "Review",
+      "fields": [
+        "reviewId",
+        "productId",
+        "rating",
+        "comment"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823111",
+    "question": {
+      "modelName": "Category",
+      "fields": [
+        "categoryId",
+        "name",
+        "description",
+        "parentId"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823112",
+    "question": {
+      "modelName": "User",
+      "fields": [
+        "username",
+        "passwordHash",
+        "email",
+        "role"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823113",
+    "question": {
+      "modelName": "Role",
+      "fields": [
+        "roleId",
+        "name",
+        "permissions",
+        "createdAt"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823114",
+    "question": {
+      "modelName": "Permission",
+      "fields": [
+        "permissionId",
+        "action",
+        "resource",
+        "description"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823115",
+    "question": {
+      "modelName": "BlogPost",
+      "fields": [
+        "title",
+        "content",
+        "author",
+        "publishedAt"
+      ]
+    }
+  },
+  {
+    "enrollmentNumber": "240823116",
+    "question": {
+      "modelName": "Comment",
+      "fields": [
+        "commentId",
+        "postId",
+        "author",
+        "text"
+      ]
+    }
+  }
+]

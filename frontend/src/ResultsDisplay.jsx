@@ -51,7 +51,7 @@ function ResultsDisplay({ results }) {
           </div>
         </div>
       </div>
-      
+{/*       
       <div className="feedback-section">
         <h3>Detailed Diagnostics</h3>
         <div className="feedback-list">
@@ -66,7 +66,7 @@ function ResultsDisplay({ results }) {
             <FeedbackItem key={`controller-${index}`} item={item} />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
